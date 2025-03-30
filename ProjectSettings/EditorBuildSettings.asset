@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/01 Pantalla Inicial.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/02 Pantalla Info.unity
+    guid: 970e15e7014997447bacd2c58817be5b
+  - enabled: 1
+    path: Assets/Scenes/03 Pantalla Principal.unity
+    guid: ae39a5e2f7e81464898caca70a7aa0f9
+  - enabled: 1
+    path: Assets/Scenes/09 Pantalla Tema 1.unity
+    guid: 780a64d7ab7e6134196fc8329a159eaf
+  - enabled: 1
+    path: Assets/Scenes/10.1 Pantalla Preguntas Tema 1 P1.unity
+    guid: 90dc02ac68cbb9248b82e5813d693d4f
   m_configObjects: {}

@@ -1,0 +1,2 @@
+1. revisar bien el target de la build, file - build settings - switch to android
+2. En caso de querer cambiar la orientación del diseño: edit - Project settings - player - android setting - pestaña: resolution and presentations - default orientations.
