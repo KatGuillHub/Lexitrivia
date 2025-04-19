@@ -1,4 +1,4 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Extensions;
@@ -20,15 +20,15 @@ public class FirebaseInitializer : MonoBehaviour
             {
                 FirebaseApp app = FirebaseApp.DefaultInstance;
 
-                // Aseg˙rate de poner tu URL real aquÌ
+                // Aseg√∫rate de poner tu URL real aqu√≠
                 app.Options.DatabaseUrl = new System.Uri("https://lextrivia-umng-default-rtdb.firebaseio.com/");
-                Debug.Log("? Firebase inicializado con DatabaseURL.");
+                Debug.Log("‚úÖ Firebase inicializado con DatabaseURL.");
 
                 auth = FirebaseAuth.DefaultInstance;
             }
             else
             {
-                Debug.LogError("? Error al inicializar Firebase: " + task.Result);
+                Debug.LogError("‚ùå Error al inicializar Firebase: " + task.Result);
             }
         });
     }
@@ -37,7 +37,7 @@ public class FirebaseInitializer : MonoBehaviour
     {
         if (auth == null)
         {
-            statusText.text = "Firebase a˙n no est· listo.";
+            statusText.text = "Firebase a√∫n no est√° listo.";
             return;
         }
 
@@ -62,7 +62,7 @@ public class FirebaseInitializer : MonoBehaviour
     {
         if (auth == null)
         {
-            statusText.text = "Firebase a˙n no est· listo.";
+            statusText.text = "Firebase a√∫n no est√° listo.";
             return;
         }
 
