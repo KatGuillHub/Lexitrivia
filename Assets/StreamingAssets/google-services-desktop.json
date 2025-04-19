@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "112037803833",
+    "project_id": "lextrivia-umng",
+    "storage_bucket": "lextrivia-umng.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112037803833:android:f8eaf19647f254aeee5ae8",
+        "android_client_info": {
+          "package_name": "com.LexTrivia.Registro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPzTETo9svCrACju6eiQvorNZGzRAHF2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
