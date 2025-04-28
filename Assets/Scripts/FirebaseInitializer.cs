@@ -2,6 +2,7 @@
 using Firebase;
 using Firebase.Auth;
 using Firebase.Extensions;
+using Firebase.Database;
 using TMPro;
 
 public class FirebaseInitializer : MonoBehaviour
@@ -54,9 +55,22 @@ public class FirebaseInitializer : MonoBehaviour
             {
                 FirebaseUser newUser = task.Result.User;
                 statusText.text = "Usuario registrado: " + newUser.Email;
+
+                // 🔥 Guardar usuario en la base de datos
+                DatabaseReference databaseRef = FirebaseDatabase.DefaultInstance.RootReference;
+
+                UserProfileData userData = new UserProfileData
+                {
+                    email = newUser.Email,
+                    uid = newUser.UserId
+                };
+
+                string json = JsonUtility.ToJson(userData);
+                databaseRef.Child("users").Child(newUser.UserId).SetRawJsonValueAsync(json);
             }
         });
     }
+
 
     public void LoginUser()
     {
@@ -83,3 +97,11 @@ public class FirebaseInitializer : MonoBehaviour
         });
     }
 }
+
+[System.Serializable]
+public class UserProfileData
+{
+    public string email;
+    public string uid;
+}
+
