@@ -62,4 +62,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tema 2/12.5 Pantalla Preguntas Tema 2 P5.unity
     guid: 70e9869bc5d14ad4c85f16a73f42d237
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: 15ee846f25b21b04ea6a031b22ec3700
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 7cda5fc1e1036dd4ba93380d50c09410
+  - enabled: 1
+    path: Assets/Scenes/Registro.unity
+    guid: c4832d05bf3c6694f89e6286de870cae
   m_configObjects: {}
