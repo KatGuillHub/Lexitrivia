@@ -71,4 +71,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Registro.unity
     guid: c4832d05bf3c6694f89e6286de870cae
+  - enabled: 1
+    path: "Assets/Scenes/Br\xFAjula de un abogado  impecable.unity"
+    guid: 0d98f4c10293227408d6eab15a71a63c
+  - enabled: 1
+    path: Assets/Scenes/Navegando el derecho privado.unity
+    guid: 33a8b7eb9ab97db4b9aff7ec6ece1656
+  - enabled: 1
+    path: "Assets/Scenes/Guardianes de la \xE9tica.unity"
+    guid: dbb54d6087fa54140adf146f94d5856c
+  - enabled: 1
+    path: Assets/Scenes/La magia de ser humano.unity
+    guid: d3151d543e8cf3e4b90e5c0400ed42d2
+  - enabled: 1
+    path: "Assets/Scenes/Navegando el derech  p\xFAblico.unity"
+    guid: e48318b7449ce6746945f08c4b0af8d3
   m_configObjects: {}
