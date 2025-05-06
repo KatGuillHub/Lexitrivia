@@ -1,13 +1,14 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement; // Importante para cambiar de escena
+using UnityEngine.SceneManagement;
 
 public class SpinWheel : MonoBehaviour
 {
     public float spinDuration = 4f;
-    public AnimationCurve easeCurve; // Asigna una curva suave desde el Inspector
+    public AnimationCurve easeCurve; // Asigna desde el Inspector
 
     private bool isSpinning = false;
+    private int lastSegment = -1;
 
     private string[] temas = {
         "Derecho Penal",
@@ -18,16 +19,15 @@ public class SpinWheel : MonoBehaviour
     };
 
     private string[] escenas = {
-        "Brújula de un abogado  impecable",         // Asegúrate que estas escenas existen y están en Build Settings
+        "Brújula de un abogado impecable",        
         "Guardianes de la ética",
         "La magia de ser humano",
-        "Navegando el derech  público",
+        "Navegando el derecho público",
         "Navegando el derecho privado"
     };
 
     public void StartSpin()
     {
-        Debug.Log("¡Botón presionado! Iniciando giro.");
         if (!isSpinning)
         {
             StartCoroutine(Spin());
@@ -38,7 +38,23 @@ public class SpinWheel : MonoBehaviour
     {
         isSpinning = true;
 
-        float totalAngle = 360 * Random.Range(3, 6) + Random.Range(0, 360);
+        // Elegir un nuevo segmento diferente al anterior
+        int newSegment;
+        do
+        {
+            newSegment = Random.Range(0, temas.Length);
+        } while (newSegment == lastSegment);
+
+        lastSegment = newSegment;
+
+        // Calcular ángulo total para detenerse exactamente en ese segmento
+        float segmentAngle = 360f / temas.Length;
+        float targetAngle = segmentAngle * newSegment;
+
+        // Añadir varias vueltas completas para el efecto visual
+        float extraRotations = Random.Range(3, 6) * 360f;
+        float totalAngle = extraRotations + targetAngle;
+
         float currentAngle = 0f;
         float elapsed = 0f;
 
@@ -53,20 +69,11 @@ public class SpinWheel : MonoBehaviour
             yield return null;
         }
 
-        // Calcular el tema seleccionado según el ángulo
-        int selectedSegment = GetSegmentFromAngle(transform.eulerAngles.z);
-        Debug.Log("Tema seleccionado: " + temas[selectedSegment]);
+        Debug.Log("Tema seleccionado: " + temas[newSegment]);
 
-        // Cargar escena correspondiente
-        LoadThemeScene(selectedSegment);
+        LoadThemeScene(newSegment);
 
         isSpinning = false;
-    }
-
-    int GetSegmentFromAngle(float angle)
-    {
-        float fixedAngle = (360 - angle + 36) % 360; // Centrar el ángulo
-        return (int)(fixedAngle / 72f); // 360 / 5 temas = 72 grados por segmento
     }
 
     void LoadThemeScene(int temaIndex)
