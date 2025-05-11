@@ -274,9 +274,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Un abogado que represente a m\xFAltiples clientes con intereses potencialmente
-    opuestos puede continuar con su ejercicio profesional en ambos casos, siempre
-    que informe a las partes involucradas y obtenga su consentimiento expreso, sin
-    que esto afecte su deber de lealtad y confidencialidad.r"
+    opuestos puede\r\ncontinuar con su ejercicio profesional en ambos casos, siempre
+    que informe a las partes involucradas\r\ny obtenga su consentimiento expreso,
+    sin que esto afecte su deber de lealtad y confidencialidad."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}

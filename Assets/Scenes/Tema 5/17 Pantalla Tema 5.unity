@@ -243,14 +243,14 @@ RectTransform:
   m_GameObject: {fileID: 131191087}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -4.792148, y: 11.905683, z: 1}
+  m_LocalScale: {x: -4.792148, y: 6.0053315, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2038228875}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 669}
+  m_AnchoredPosition: {x: -6, y: 823}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &131191089
@@ -273,10 +273,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Las habilidades humanas o blandas son capacidades personales y sociales
-    que favorecen la interacci\xF3n efectiva. Incluyen comunicaci\xF3n, empat\xEDa,
-    trabajo en equipo, liderazgo y gesti\xF3n del tiempo, siendo esenciales para
-    el crecimiento laboral y personal."
+  m_text: "Categor\xEDa de conocimientos b\xE1sicos en el \xE1rea de derecho privado\r\n\u2022
+    El derecho privado en Colombia es el conjunto de normas que regulan las relaciones
+    entre\r\nparticulares, bas\xE1ndose en principios como la autonom\xEDa de la
+    voluntad, la buena fe y la\r\nigualdad jur\xEDdica. Su objetivo es proteger los
+    intereses individuales y garantizar la seguridad\r\njur\xEDdica en los actos
+    y negocios entre personas naturales y jur\xEDdicas.\r\n\u2022 Se divide principalmente
+    en derecho civil (que regula aspectos como la propiedad, los\r\ncontratos, las
+    obligaciones y el derecho de familia) y derecho comercial o mercantil (que\r\nrige
+    las relaciones entre comerciantes y las actividades empresariales). "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -303,8 +308,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 9
+  m_fontSizeBase: 9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -339,7 +344,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.3302919, y: 8.39356, z: 0, w: 0}
+  m_margin: {x: -1.3302919, y: 8.39356, z: 0, w: -268.97446}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -628,7 +633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LA MAGIA DE SER HUMANO
+  m_text: NAVEGANDO EL DERECHO PRIVADO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -655,8 +660,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1170,7 +1175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -740}
+  m_AnchoredPosition: {x: 0, y: -746}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1698949838
@@ -1226,7 +1231,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 10 texto Tema 1 P1
+          m_StringArgument: 18.1 Pantalla Preguntas Tema 5 P1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1698949839
@@ -1294,7 +1299,7 @@ RectTransform:
   m_GameObject: {fileID: 2038228874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.893829, y: 0.5626885, z: 0.7772426}
+  m_LocalScale: {x: 0.893829, y: 0.6261035, z: 0.7772426}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 131191088}
@@ -1302,7 +1307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 15}
+  m_AnchoredPosition: {x: 0, y: -19.187}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038228876
