@@ -18,43 +18,43 @@ EditorBuildSettings:
     path: Assets/Scenes/08 Pantalla Ruleta Juego.unity
     guid: 30ed4ccb8620a0440a0e5896ac97c90e
   - enabled: 1
-    path: Assets/Scenes/Tema 1/09 Pantalla Tema 1.unity
+    path: "Assets/Scenes/Tema 1/Informaci\xF3n.unity"
     guid: 780a64d7ab7e6134196fc8329a159eaf
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10 texto Tema 1 P1.unity
+    path: Assets/Scenes/Tema 1/Pregunta 1.unity
     guid: 8308f9e7191179543a29959acfcf9b22
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.1 Pantalla Preguntas Tema 1 P1.unity
+    path: Assets/Scenes/Tema 1/Pregunta1.1.unity
     guid: 90dc02ac68cbb9248b82e5813d693d4f
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.2 texto Tema 1 P2.unity
+    path: Assets/Scenes/Tema 1/Preguna 2.unity
     guid: cff93031c658a8a458dd5ad73b1b4674
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.3 Pantalla Preguntas Tema 1 P2.unity
+    path: Assets/Scenes/Tema 1/Pregunta 2.2.unity
     guid: 5bc454247e598174590c47239d6cd65e
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.4 texto Tema 1 P3.unity
+    path: Assets/Scenes/Tema 1/Pregunta 3.unity
     guid: f93f7b2d5f57dcd45bbf180c703f091c
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.5 Pantalla Preguntas Tema 1 P3.unity
+    path: Assets/Scenes/Tema 1/Pregunta 3.3.unity
     guid: 7ef9faf08ac99bf4292a8fddcf43b98e
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.6 texto Tema 1 P4.unity
+    path: Assets/Scenes/Tema 1/Pregunta 4.unity
     guid: 5f651af3f871af042a1a6693d589aa54
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.7 Pantalla Preguntas Tema 1 P4.unity
+    path: Assets/Scenes/Tema 1/Pregunta 4.4.unity
     guid: f06c80178c2f01f44913e397963157b5
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.8 texto Tema 1 P5.unity
+    path: Assets/Scenes/Tema 1/Pregunta 5.unity
     guid: 6488fedf62b19614982da03c15ef1982
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.9 Pantalla Preguntas Tema 1 P5.unity
+    path: Assets/Scenes/Tema 1/Pregunta 5.5.unity
     guid: 11e4529dbd421e04d81bf6e6d93dbce8
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.10 texto Tema 1 P6.unity
+    path: Assets/Scenes/Tema 1/Pregunta 6.unity
     guid: 50b55b974b6ba1449bb6eaffaf181f58
   - enabled: 1
-    path: Assets/Scenes/Tema 1/10.11 Pantalla Preguntas Tema 1 P6.unity
+    path: Assets/Scenes/Tema 1/Pregunta 6.6.unity
     guid: 3c3c45226d24be74095993f0428263d2
   - enabled: 1
     path: Assets/Scenes/Tema 2/11 Pantalla Tema 2.unity
