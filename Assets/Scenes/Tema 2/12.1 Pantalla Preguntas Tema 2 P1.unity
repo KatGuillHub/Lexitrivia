@@ -243,14 +243,14 @@ RectTransform:
   m_GameObject: {fileID: 131191087}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -4.792148, y: 33.1137, z: 1}
+  m_LocalScale: {x: -4.792148, y: 30.625206, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2038228875}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 270}
+  m_AnchoredPosition: {x: -6, y: 362}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &131191089
@@ -273,9 +273,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xBFCu\xE1l de las siguientes acciones es acorde con el deber del abogado
-    seg\xFAn el Art\xEDculo 35 de la Ley 1123 de 2007 del C\xF3digo Disciplinario
-    del Abogado?"
+  m_text: "\xBFCu\xE1l de los siguientes es un consejo clave para ser un buen abogado
+    de acuerdo con el Art\xEDculo\r\n28 # 4 de la ley 1123 de 2007 del c\xF3digo
+    disciplinario del abogado? "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.3302919, y: 8.39356, z: 0, w: -6.133314}
+  m_margin: {x: -1.3302919, y: 8.39356, z: 0, w: -13.525099}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Asegurar que sus actuaciones se basen en la lealtad y la buena fe.
+  m_text: Confiar solamente en el cliente.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ocultar informaci\xF3n relevante a la contraparte para ganar el litigio."
+  m_text: No prepararse antes de una audiencia.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1834,8 +1834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Enga\xF1ar a las autoridades judiciales para obtener una ventaja en el
-    caso."
+  m_text: Mantenerse actualizado en las leyes y jurisprudencia.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2005,7 +2004,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1235495841
 MonoBehaviour:
@@ -2253,7 +2252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Presentar pruebas falsas si benefician a su cliente.
+  m_text: "Confiar \xFAnicamente en la intuici\xF3n y no en la investigaci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2494,11 +2493,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La lealtad y la buena fe son principios esenciales en el ejercicio de
-    la abogac\xEDa. Seg\xFAn el Art\xEDculo 35 de la Ley 1123 de 2007, el abogado
-    debe actuar con honestidad, transparencia y respeto por la justicia, evitando
-    cualquier conducta fraudulenta o desleal en el ejercicio de su profesi\xF3n.
-    \n"
+  m_text: "El derecho es una disciplina en constante cambio, por lo que mantenerse\r\ninformado
+    sobre nuevas leyes y precedentes es esencial para brindar un servicio jur\xEDdico
+    eficaz y \xE9tico,\r\ncomo lo establece el articulo 28 de la ley 1123 de 2007
+    del c\xF3digo disciplinario del abogado numeral\r\n4, el cual establece que es
+    deber del abogado: \u201CActualizar los conocimientos inherentes al ejercicio
+    de\r\nla profesi\xF3n\u201D\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2561,7 +2561,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -95.016205}
+  m_margin: {x: 0, y: 0, z: 0, w: -172.11302}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2584,14 +2584,14 @@ RectTransform:
   m_GameObject: {fileID: 1586242960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.5797176, y: 5.6358366, z: 4.9511}
+  m_LocalScale: {x: 4.5797176, y: 3.965786, z: 4.9511}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148594213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 335}
+  m_AnchoredPosition: {x: 0, y: 414}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1631958219
@@ -2736,7 +2736,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1698949839
 MonoBehaviour:

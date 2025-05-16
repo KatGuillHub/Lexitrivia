@@ -243,7 +243,7 @@ RectTransform:
   m_GameObject: {fileID: 131191087}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -4.9119515, y: 37.119747, z: 1}
+  m_LocalScale: {x: -4.9119515, y: 40.83915, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2038228875}
@@ -274,9 +274,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Si un estudiante de consultorio jur\xEDdico recibe dinero por los servicios
-    ofrecidos, \xBFqu\xE9 sanci\xF3n implicar\xEDa esta conducta de acuerdo a la
-    resoluci\xF3n 0128 del 03 de febrero del 2015 de la universidad militar nueva
-    granada? "
+    ofrecidos, \xBFqu\xE9 sanci\xF3n\r\nimplicar\xEDa esta conducta de acuerdo con
+    la resoluci\xF3n 0128 del 03 de febrero del 2015 de la\r\nuniversidad militar
+    nueva granada? "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -2148,14 +2148,14 @@ RectTransform:
   m_GameObject: {fileID: 1422714980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.1127057, y: 5.280559, z: 1}
+  m_LocalScale: {x: 5.8682666, y: 4.0239444, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148594213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -644}
+  m_AnchoredPosition: {x: 0, y: -727}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422714982
@@ -2495,10 +2495,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "De acuerdo a la resoluci\xF3n 0128 del 03 de febrero del 2015, configura
-    las faltas grav\xEDsimas en su art\xEDculo 40 literal E (cobrar alg\xFAn tipo
-    de honorarios o dineros o recibir alg\xFAn tipo de contraprestaci\xF3n o emolumento
-    a los usuarios del consultorio jur\xEDdico) tendr\xE1 como sanci\xF3n de acuerdo
-    a lo estipulado en el art\xEDculo 42"
+    las faltas\r\ngrav\xEDsimas en su art\xEDculo 40 literal E (cobrar alg\xFAn tipo
+    de honorarios o dineros o recibir alg\xFAn tipo de\r\ncontraprestaci\xF3n o emolumento
+    a los usuarios del consultorio jur\xEDdico) tendr\xE1 como sanci\xF3n de\r\nacuerdo
+    a lo estipulado en el art\xEDculo 42:\r\n\n1.Se podr\xE1 configurar\r\na) amonestaci\xF3n
+    privada\r\nb) amonestaci\xF3n p\xFAblica\r\nC) sanci\xF3n pedag\xF3gica\r\n\nSe
+    impondr\xE1 al estudiante las siguientes sanciones acad\xE9micas disciplinarias\r\na)
+    primero Calificaci\xF3n de 0.0 en el caso correspondiente\r\nb) asignaci\xF3n
+    de 0.0 y la calificaci\xF3n total y definitiva del consultorio jur\xEDdico que
+    est\xE9 cursando. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2561,7 +2566,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -112.043816}
+  m_margin: {x: 0, y: 0, z: 0, w: -335.07147}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2584,14 +2589,14 @@ RectTransform:
   m_GameObject: {fileID: 1586242960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.5797176, y: 4.2041273, z: 4.9511}
+  m_LocalScale: {x: 4.5797176, y: 3.3196087, z: 4.9511}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148594213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 272}
+  m_AnchoredPosition: {x: 0, y: 690}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1631958219
