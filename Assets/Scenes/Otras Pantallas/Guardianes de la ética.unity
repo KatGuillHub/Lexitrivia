@@ -1769,8 +1769,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  questionPanel: {fileID: 0}
-  questionText: {fileID: 0}
 --- !u!114 &1112585666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2122,8 +2120,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  questionPanel: {fileID: 0}
-  questionText: {fileID: 0}
 --- !u!4 &1515073423
 Transform:
   m_ObjectHideFlags: 0
@@ -2538,8 +2534,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  questionPanel: {fileID: 0}
-  questionText: {fileID: 0}
 --- !u!114 &1774831682
 MonoBehaviour:
   m_ObjectHideFlags: 0
