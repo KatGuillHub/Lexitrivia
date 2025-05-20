@@ -20,11 +20,14 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Tema 1/Informaci\xF3n.unity"
     guid: 780a64d7ab7e6134196fc8329a159eaf
-  - enabled: 1
-    path: Assets/Scenes/Tema 1/Pregunta 1.unity
+  - enabled: 0
+    path: Assets/Scenes/Tema 1/10 texto Tema 1 P1.unity
     guid: 8308f9e7191179543a29959acfcf9b22
   - enabled: 1
-    path: Assets/Scenes/Tema 1/Pregunta1.1.unity
+    path: Assets/Scenes/Tema 1/Pregunta 1.unity
+    guid: 804885c75819768449f99d3aac60ae93
+  - enabled: 1
+    path: Assets/Scenes/Tema 1/Pregunta 1.1.unity
     guid: 90dc02ac68cbb9248b82e5813d693d4f
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 2.unity
@@ -32,30 +35,45 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 2.2.unity
     guid: 5bc454247e598174590c47239d6cd65e
+  - enabled: 0
+    path: Assets/Scenes/Tema 1/10.4 texto Tema 1 P3.unity
+    guid: f93f7b2d5f57dcd45bbf180c703f091c
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 3.unity
-    guid: f93f7b2d5f57dcd45bbf180c703f091c
+    guid: 8c8ab555a8bf9294f87bdb209f57917f
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 3.3.unity
     guid: 7ef9faf08ac99bf4292a8fddcf43b98e
+  - enabled: 0
+    path: Assets/Scenes/Tema 1/10.6 texto Tema 1 P4.unity
+    guid: 5f651af3f871af042a1a6693d589aa54
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 4.unity
-    guid: 5f651af3f871af042a1a6693d589aa54
+    guid: e7a97ed5a4e0ef149a73346f6ec2fbb8
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 4.4.unity
     guid: f06c80178c2f01f44913e397963157b5
+  - enabled: 0
+    path: Assets/Scenes/Tema 1/10.8 texto Tema 1 P5.unity
+    guid: 6488fedf62b19614982da03c15ef1982
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 5.unity
-    guid: 6488fedf62b19614982da03c15ef1982
+    guid: d67143335c198ab42bbc3e700556473c
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 5.5.unity
     guid: 11e4529dbd421e04d81bf6e6d93dbce8
+  - enabled: 0
+    path: Assets/Scenes/Tema 1/10.10 texto Tema 1 P6.unity
+    guid: 50b55b974b6ba1449bb6eaffaf181f58
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 6.unity
-    guid: 50b55b974b6ba1449bb6eaffaf181f58
+    guid: e9449d1747a80dc42b6adda073891fa3
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 6.6.unity
     guid: 3c3c45226d24be74095993f0428263d2
+  - enabled: 1
+    path: "Assets/Scenes/Tema 2/Informaci\xF3n 1.unity"
+    guid: 12416f103d05e864ea266777bd599e90
   - enabled: 1
     path: Assets/Scenes/Tema 2/11 Pantalla Tema 2.unity
     guid: 8adf2c9095b23f849a5ac2ebc8eb3fdc
@@ -225,18 +243,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Registro.unity
     guid: c4832d05bf3c6694f89e6286de870cae
   - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 32d20bbbacddd1f4aae9aa1fee3c574d
+  - enabled: 0
     path: "Assets/Scenes/Otras Pantallas/Br\xFAjula de un abogado  impecable.unity"
     guid: 0d98f4c10293227408d6eab15a71a63c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Otras Pantallas/Navegando el derecho privado.unity
     guid: 33a8b7eb9ab97db4b9aff7ec6ece1656
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Otras Pantallas/Guardianes de la \xE9tica.unity"
     guid: dbb54d6087fa54140adf146f94d5856c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Otras Pantallas/La magia de ser humano.unity
     guid: d3151d543e8cf3e4b90e5c0400ed42d2
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Otras Pantallas/Navegando el derech  p\xFAblico.unity"
     guid: e48318b7449ce6746945f08c4b0af8d3
   m_configObjects: {}
