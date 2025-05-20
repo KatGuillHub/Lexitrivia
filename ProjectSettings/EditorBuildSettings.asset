@@ -78,19 +78,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Tema 2/11 Pantalla Tema 2.unity
     guid: 8adf2c9095b23f849a5ac2ebc8eb3fdc
   - enabled: 1
-    path: Assets/Scenes/Tema 2/T2Pregunta 1.unity
+    path: Assets/Scenes/Tema 2/12.1 Pantalla Preguntas Tema 2 P1.unity
     guid: e0f19da315e7332489eb9dfd01bef867
   - enabled: 1
-    path: Assets/Scenes/Tema 2/T2Pregunta 2.unity
+    path: Assets/Scenes/Tema 2/12.2 Pantalla Preguntas Tema 2 P2.unity
     guid: 704d4bdc155ebba41862b02e947a1188
   - enabled: 1
-    path: Assets/Scenes/Tema 2/T2Pregunta 3.unity
+    path: Assets/Scenes/Tema 2/12.3 Pantalla Preguntas Tema 2 P3.unity
     guid: dfffe65c6cc82f4408b8312f9433ea9e
   - enabled: 1
-    path: Assets/Scenes/Tema 2/T2Pregunta 4.unity
+    path: Assets/Scenes/Tema 2/12.4 Pantalla Preguntas Tema 2 P4.unity
     guid: cd483e5ef56714240a27fbc4d2c58bb3
   - enabled: 1
-    path: Assets/Scenes/Tema 2/T2Pregunta 5.unity
+    path: Assets/Scenes/Tema 2/12.5 Pantalla Preguntas Tema 2 P5.unity
     guid: 70e9869bc5d14ad4c85f16a73f42d237
   - enabled: 1
     path: Assets/Scenes/Tema 3/13 Pantalla Tema 3.unity
