@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Tema 1/Pregunta1.1.unity
     guid: 90dc02ac68cbb9248b82e5813d693d4f
   - enabled: 1
-    path: Assets/Scenes/Tema 1/Preguna 2.unity
+    path: Assets/Scenes/Tema 1/Pregunta 2.unity
     guid: cff93031c658a8a458dd5ad73b1b4674
   - enabled: 1
     path: Assets/Scenes/Tema 1/Pregunta 2.2.unity
