@@ -1,18 +1,21 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
-public class RuletaController : MonoBehaviour
+public class SpinWheel : MonoBehaviour
 {
     public Button botonGirar;
-    public string[] nombresEscenas; // Asegúrate de poner los nombres en el orden de las secciones de la ruleta
-    public float tiempoEspera = 10f;
+    public Transform ruleta;
+    public float duracionGiro = 4f; // Tiempo total de giro
+    public int vueltasMinimas = 5;
+    public int vueltasMaximas = 7;
 
     private bool girando = false;
-    private float velocidadAngular = 0f;
-    private float desaceleracion = 50f;
-    private float anguloFinal;
+    private float tiempoGiro = 0f;
+    private float anguloInicial = 0f;
+    private float anguloObjetivo = 0f;
+    private float anguloFinal = 0f;
 
     void Start()
     {
@@ -23,17 +26,18 @@ public class RuletaController : MonoBehaviour
     {
         if (girando)
         {
-            transform.Rotate(0, 0, -velocidadAngular * Time.deltaTime);
-            velocidadAngular -= desaceleracion * Time.deltaTime;
+            tiempoGiro += Time.deltaTime;
+            float t = Mathf.Clamp01(tiempoGiro / duracionGiro);
+            float anguloActual = Mathf.Lerp(anguloInicial, anguloObjetivo, EaseOutCubic(t));
+            ruleta.eulerAngles = new Vector3(0f, 0f, -anguloActual);
 
-            if (velocidadAngular <= 0)
+            if (t >= 1f)
             {
                 girando = false;
-                velocidadAngular = 0;
-
-                // Determina el ángulo final
-                anguloFinal = transform.eulerAngles.z;
-                StartCoroutine(EsperarYEjecutar());
+                tiempoGiro = 0f;
+                anguloFinal = anguloActual % 360;
+                Debug.Log("Ángulo final: " + anguloFinal);
+                StartCoroutine(CambiarEscenaDespuesDe(0.7f));
             }
         }
     }
@@ -42,25 +46,46 @@ public class RuletaController : MonoBehaviour
     {
         if (!girando)
         {
-            velocidadAngular = Random.Range(500, 800); // Velocidad inicial aleatoria
+            int sectorAleatorio = Random.Range(0, 6); // 0 a 5
+            float anguloSector = sectorAleatorio * 60f + 30f; // Centro del sector
+
+            int vueltas = Random.Range(vueltasMinimas, vueltasMaximas + 1); // Vuelta completa = 360°
+            anguloInicial = ruleta.eulerAngles.z * -1f; // Convertimos la rotación actual
+            anguloObjetivo = vueltas * 360f + anguloSector;
+
             girando = true;
+            tiempoGiro = 0f;
         }
     }
 
-    IEnumerator EsperarYEjecutar()
+    float EaseOutCubic(float t)
     {
-        yield return new WaitForSeconds(tiempoEspera);
-
-        int indiceTema = ObtenerTemaDesdeAngulo(anguloFinal);
-        SceneManager.LoadScene(nombresEscenas[indiceTema]);
+        return 1f - Mathf.Pow(1f - t, 3f); // Para un giro suave
     }
 
-    int ObtenerTemaDesdeAngulo(float angulo)
+    IEnumerator CambiarEscenaDespuesDe(float segundos)
     {
-        // Asegúrate de que el ángulo esté entre 0 y 360
-        angulo = (360 - (angulo % 360)) % 360;
+        yield return new WaitForSeconds(segundos);
+        string nombreEscena = ObtenerEscenaPorAngulo(anguloFinal);
+        SceneManager.LoadScene(nombreEscena);
+    }
 
-        float seccion = 360f / nombresEscenas.Length;
-        return Mathf.FloorToInt(angulo / seccion);
+    string ObtenerEscenaPorAngulo(float angulo)
+    {
+        // Normaliza
+        angulo = (angulo + 360f) % 360f;
+
+        if (angulo >= 0f && angulo < 60f)
+            return "13 Pantalla Tema 3";         // Azul
+        else if (angulo >= 60f && angulo < 120f)
+            return "15 Pantalla Tema 4";                // Rojo oscuro
+        else if (angulo >= 120f && angulo < 180f)
+            return "11 Pantalla Tema 2";         // Rojo claro
+        else if (angulo >= 180f && angulo < 240f)
+            return "17 Pantalla Tema 5";         // Fucsia
+        else if (angulo >= 240f && angulo < 300f)
+            return "13 Pantalla Tema 3";         // Verde
+        else
+            return "13 Pantalla Tema 3";            // Morado
     }
 }
