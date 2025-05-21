@@ -1,85 +1,66 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class SpinWheel : MonoBehaviour
+public class RuletaController : MonoBehaviour
 {
-    public float spinDuration = 4f;
-    public AnimationCurve easeCurve; // Asigna desde el Inspector
+    public Button botonGirar;
+    public string[] nombresEscenas; // Asegúrate de poner los nombres en el orden de las secciones de la ruleta
+    public float tiempoEspera = 10f;
 
-    private bool isSpinning = false;
-    private int lastSegment = -1;
+    private bool girando = false;
+    private float velocidadAngular = 0f;
+    private float desaceleracion = 50f;
+    private float anguloFinal;
 
-    private string[] temas = {
-        "Derecho Penal",
-        "Derecho Civil",
-        "Derecho Laboral",
-        "Derecho Constitucional",
-        "Derecho Internacional"
-    };
-
-    private string[] escenas = {
-        "Brújula de un abogado impecable",        
-        "Guardianes de la ética",
-        "La magia de ser humano",
-        "Navegando el derecho público",
-        "Navegando el derecho privado"
-    };
-
-    public void StartSpin()
+    void Start()
     {
-        if (!isSpinning)
+        botonGirar.onClick.AddListener(IniciarGiro);
+    }
+
+    void Update()
+    {
+        if (girando)
         {
-            StartCoroutine(Spin());
+            transform.Rotate(0, 0, -velocidadAngular * Time.deltaTime);
+            velocidadAngular -= desaceleracion * Time.deltaTime;
+
+            if (velocidadAngular <= 0)
+            {
+                girando = false;
+                velocidadAngular = 0;
+
+                // Determina el ángulo final
+                anguloFinal = transform.eulerAngles.z;
+                StartCoroutine(EsperarYEjecutar());
+            }
         }
     }
 
-    IEnumerator Spin()
+    void IniciarGiro()
     {
-        isSpinning = true;
-
-        // Elegir un nuevo segmento diferente al anterior
-        int newSegment;
-        do
+        if (!girando)
         {
-            newSegment = Random.Range(0, temas.Length);
-        } while (newSegment == lastSegment);
-
-        lastSegment = newSegment;
-
-        // Calcular ángulo total para detenerse exactamente en ese segmento
-        float segmentAngle = 360f / temas.Length;
-        float targetAngle = segmentAngle * newSegment;
-
-        // Añadir varias vueltas completas para el efecto visual
-        float extraRotations = Random.Range(3, 6) * 360f;
-        float totalAngle = extraRotations + targetAngle;
-
-        float currentAngle = 0f;
-        float elapsed = 0f;
-
-        Quaternion startRotation = transform.rotation;
-
-        while (elapsed < spinDuration)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / spinDuration;
-            float angle = Mathf.Lerp(0, totalAngle, easeCurve.Evaluate(t));
-            transform.rotation = startRotation * Quaternion.Euler(0, 0, -angle);
-            yield return null;
+            velocidadAngular = Random.Range(500, 800); // Velocidad inicial aleatoria
+            girando = true;
         }
-
-        Debug.Log("Tema seleccionado: " + temas[newSegment]);
-
-        LoadThemeScene(newSegment);
-
-        isSpinning = false;
     }
 
-    void LoadThemeScene(int temaIndex)
+    IEnumerator EsperarYEjecutar()
     {
-        string sceneName = escenas[temaIndex];
-        Debug.Log("Cargando escena: " + sceneName);
-        SceneManager.LoadScene(sceneName);
+        yield return new WaitForSeconds(tiempoEspera);
+
+        int indiceTema = ObtenerTemaDesdeAngulo(anguloFinal);
+        SceneManager.LoadScene(nombresEscenas[indiceTema]);
+    }
+
+    int ObtenerTemaDesdeAngulo(float angulo)
+    {
+        // Asegúrate de que el ángulo esté entre 0 y 360
+        angulo = (360 - (angulo % 360)) % 360;
+
+        float seccion = 360f / nombresEscenas.Length;
+        return Mathf.FloorToInt(angulo / seccion);
     }
 }
