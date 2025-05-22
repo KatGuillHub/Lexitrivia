@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayClickSound()
     {
+        Debug.Log("sonido");
         source.PlayOneShot(clickSound);
     }
 }
