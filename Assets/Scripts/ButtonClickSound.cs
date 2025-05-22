@@ -1,20 +1,28 @@
-
 using UnityEngine;
 
-public class ButtonClickSound : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public AudioSource clickSource;
+    public static AudioManager Instance;
+    public AudioSource source;
+    public AudioClip clickSound;
 
-    public void PlayClick()
+    void Awake()
     {
-        if (clickSource != null)
+        // Singleton
+        if (Instance == null)
         {
-            clickSource.Play();
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Opcional si lo usas entre escenas
         }
         else
         {
-            Debug.LogWarning("AudioSource no asignado.");
+            Destroy(gameObject);
         }
+    }
+
+    public void PlayClickSound()
+    {
+        source.PlayOneShot(clickSound);
     }
 }
 
