@@ -2678,7 +2678,7 @@ MonoBehaviour:
   cruzRoja: {fileID: 1156857880}
   panelRetroalimentacion: {fileID: 148594212}
   textoRetroalimentacion: {fileID: 1586242961}
-  proximaEscena: T2Pregunta 4
+  proximaEscena: 12.4 Pantalla Preguntas Tema 2 P4
 --- !u!4 &1631958221
 Transform:
   m_ObjectHideFlags: 0
