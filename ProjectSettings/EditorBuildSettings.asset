@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: 15ee846f25b21b04ea6a031b22ec3700
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 7cda5fc1e1036dd4ba93380d50c09410
+  - enabled: 1
+    path: Assets/Scenes/Registro.unity
+    guid: c4832d05bf3c6694f89e6286de870cae
+  - enabled: 1
     path: Assets/Scenes/01 Pantalla Inicial.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -113,6 +122,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tema 3/14.6 Pantalla Preguntas Tema 3 P6.unity
     guid: b55c2e8507fb28a47a6adfa0447dd57f
+  - enabled: 1
+    path: Assets/Scenes/Tema 3/14.7 Pantalla Preguntas Tema 3 P7.unity
+    guid: 393306f43f8adbd41b9c1bee33449b89
+  - enabled: 1
+    path: Assets/Scenes/Tema 3/14.8 Pantalla Preguntas Tema 3 P8.unity
+    guid: a28711299d4a3e545ace3b84ae874d1e
+  - enabled: 1
+    path: Assets/Scenes/Tema 3/14.9 Pantalla Preguntas Tema 3 P9.unity
+    guid: 71002d7846a7a084ea1ec09e7f1b29ae
+  - enabled: 1
+    path: Assets/Scenes/Tema 3/14.10 Pantalla Preguntas Tema 3 P10.unity
+    guid: 82468e7682f04ea46b92f69fa471a7ee
   - enabled: 1
     path: Assets/Scenes/Tema 4/15 Pantalla Tema 4.unity
     guid: 8378999b5d3eb3346960f0bde5c005c2
@@ -233,15 +254,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tema 6/20.17 Pantalla Preguntas Tema 6 P10.unity
     guid: 5c1027ebda694f5409a8da7a6aa2e29a
-  - enabled: 1
-    path: Assets/Scenes/LoginScene.unity
-    guid: 15ee846f25b21b04ea6a031b22ec3700
-  - enabled: 1
-    path: Assets/Scenes/Login.unity
-    guid: 7cda5fc1e1036dd4ba93380d50c09410
-  - enabled: 1
-    path: Assets/Scenes/Registro.unity
-    guid: c4832d05bf3c6694f89e6286de870cae
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 32d20bbbacddd1f4aae9aa1fee3c574d
