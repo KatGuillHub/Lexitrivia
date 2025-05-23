@@ -724,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nicknameText: {fileID: 992351986}
-  scoreText: {fileID: 1724751478}
+  scoreText: {fileID: 0}
 --- !u!4 &608383424
 Transform:
   m_ObjectHideFlags: 0
@@ -2671,6 +2671,7 @@ MonoBehaviour:
   cruzRoja: {fileID: 1156857880}
   panelRetroalimentacion: {fileID: 148594212}
   textoRetroalimentacion: {fileID: 1586242961}
+  textoPuntuacion: {fileID: 1724751478}
   proximaEscena: 20.6 Pantalla Preguntas Tema 6 P4
 --- !u!4 &1631958221
 Transform:

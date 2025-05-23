@@ -2492,6 +2492,7 @@ MonoBehaviour:
   cruzRoja: {fileID: 1156857880}
   panelRetroalimentacion: {fileID: 148594212}
   textoRetroalimentacion: {fileID: 1586242961}
+  textoPuntuacion: {fileID: 1724751478}
   proximaEscena: 18.6 Pantalla Preguntas Tema 5 P6
 --- !u!4 &1631958221
 Transform:
