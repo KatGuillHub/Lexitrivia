@@ -7,7 +7,7 @@ public class SpinWheel : MonoBehaviour
 {
     public Button botonGirar;
     public Transform ruleta;
-    public float duracionGiro = 4f; // Tiempo total de giro
+    public float duracionGiro = 4f;
     public int vueltasMinimas = 5;
     public int vueltasMaximas = 7;
 
@@ -16,6 +16,8 @@ public class SpinWheel : MonoBehaviour
     private float anguloInicial = 0f;
     private float anguloObjetivo = 0f;
     private float anguloFinal = 0f;
+
+    private int ultimoSector = -1; // Para evitar repetición
 
     void Start()
     {
@@ -46,11 +48,17 @@ public class SpinWheel : MonoBehaviour
     {
         if (!girando)
         {
-            int sectorAleatorio = Random.Range(0, 6); // 0 a 5
-            float anguloSector = sectorAleatorio * 60f + 30f; // Centro del sector
+            int sectorAleatorio;
+            do
+            {
+                sectorAleatorio = Random.Range(0, 6);
+            } while (sectorAleatorio == ultimoSector);
 
-            int vueltas = Random.Range(vueltasMinimas, vueltasMaximas + 1); // Vuelta completa = 360°
-            anguloInicial = ruleta.eulerAngles.z * -1f; // Convertimos la rotación actual
+            ultimoSector = sectorAleatorio;
+
+            float anguloSector = sectorAleatorio * 60f + 30f; // Centro del sector
+            int vueltas = Random.Range(vueltasMinimas, vueltasMaximas + 1);
+            anguloInicial = ruleta.eulerAngles.z * -1f;
             anguloObjetivo = vueltas * 360f + anguloSector;
 
             girando = true;
@@ -60,7 +68,7 @@ public class SpinWheel : MonoBehaviour
 
     float EaseOutCubic(float t)
     {
-        return 1f - Mathf.Pow(1f - t, 3f); // Para un giro suave
+        return 1f - Mathf.Pow(1f - t, 3f);
     }
 
     IEnumerator CambiarEscenaDespuesDe(float segundos)
@@ -72,20 +80,19 @@ public class SpinWheel : MonoBehaviour
 
     string ObtenerEscenaPorAngulo(float angulo)
     {
-        // Normaliza
         angulo = (angulo + 360f) % 360f;
 
         if (angulo >= 0f && angulo < 60f)
-            return "13 Pantalla Tema 3";         // Azul
+            return "11 Pantalla Tema 2";          // Azul (Público e impacto)
         else if (angulo >= 60f && angulo < 120f)
-            return "15 Pantalla Tema 4";                // Rojo oscuro
+            return "15 Pantalla Tema 4";          // Rojo oscuro (Privado)
         else if (angulo >= 120f && angulo < 180f)
-            return "11 Pantalla Tema 2";         // Rojo claro
+            return "17 Pantalla Tema 5";          // Rojo claro (Derecho público)
         else if (angulo >= 180f && angulo < 240f)
-            return "17 Pantalla Tema 5";         // Fucsia
+            return "19 Pantalla Tema 6";          // Fucsia (Laboral)
         else if (angulo >= 240f && angulo < 300f)
-            return "13 Pantalla Tema 3";         // Verde
+            return "Información";          // Verde (SER humano)
         else
-            return "13 Pantalla Tema 3";            // Morado
+            return "13 Pantalla Tema 3";          // Morado (Ética)
     }
 }
