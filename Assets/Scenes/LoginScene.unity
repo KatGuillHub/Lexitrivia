@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 596938393}
   m_Layer: 5
   m_Name: BtnRegistrarse
-  m_TagString: Untagged
+  m_TagString: EfectoSonido
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1481,7 +1481,7 @@ GameObject:
   - component: {fileID: 2073607698}
   m_Layer: 5
   m_Name: BtnIniciarSesion
-  m_TagString: Untagged
+  m_TagString: EfectoSonido
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
