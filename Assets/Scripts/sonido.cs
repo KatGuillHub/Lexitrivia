@@ -24,7 +24,7 @@ public class sonido : MonoBehaviour
             }
 
             // Desaparece después de que termine el sonido
-            Destroy(gameObject, clickSound.length);
+            //Destroy(gameObject, clickSound.length);
         }
     }
 }
